@@ -1,0 +1,67 @@
+
+
+
+.wrap-avatars{
+  background-color: ivory;
+  width: 640px;
+  min-height: 400px;
+  padding: 150px 140px;
+  display: flow-root;
+}
+
+.avatars-status{
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+
+.face{
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  float: left;
+}
+
+.icon{
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  margin-top: 48px;
+  margin-left: 48px;
+  position: absolute;
+}
+
+.avatars-status:nth-child(5) {
+  clear: left;
+
+}
+
+
+.avatars-status:nth-child(2) .icon,
+.avatars-status:nth-child(4) .icon,
+.avatars-status:nth-child(5) .icon,
+.avatars-status:nth-child(6) .icon{
+  background-color: #4cfe88
+}
+.avatars-status:nth-child(1) .icon,
+.avatars-status:nth-child(3) .icon,
+.avatars-status:nth-child(7) .icon,
+.avatars-status:nth-child(8) .icon{
+  background-color: #DBDBDB;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                          flex를 지원하는 웹브라우저를 위한 스타일                   */
+/* -------------------------------------------------------------------------- */
+
+@supports (display: flex) {
+  .wrap-person {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
+  .avatars-status:nth-child(n+5) .avatars-status{
+    clear: left;
+  }
+}
