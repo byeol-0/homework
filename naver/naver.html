@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./naver.css" />
+  <title>네이버 로그인 페이지</title>
+</head>
+<body>
+  <header class="head-box">
+    <h1 class="logo">
+      <a href="https://www.naver.com" title="naver 메인 페이지">
+        <picture>
+          <source srcset="./naver-logo.png">
+          <img src="./naver-logo.svg" alt="네이버 로고">
+        </picture>
+      </a>
+    </h1>
+    <section class="login-form">
+    <h2 class="sr-only">아이디 비밀번호 입력 폼</h2>
+    <form action="/" class="select-value">
+      <div role="group">
+        <label class="sr-only">로그인 입력서식</label>
+        <div role="group" class="user-impormaition">
+          <div class="input-value">
+            <input class="input-box" type="email" id="user-email" required placeholder="아이디(이메일)"/>
+            <label for="user-email" class="sr-only">사용자 아이디(이메일) 입력 서식</label>
+          </div>
+          <div class="input-value">
+            <input class="input-box" type="password" id="user-pwd" required placeholder="비밀번호" />
+            <label for="user-pwd" class="sr-only">사용자 비밀번호 입력 서식</label>
+          </div>
+        </div>
+        <button type="submit" class="login-button">로그인</button>
+        <div role="group" class="login-option">
+          <div role="group" class="login-status">
+            <input type="checkbox" id="keep-login" name="keep-login" />
+            <label class="checked" for="keep-login">로그인 상태유지</label>
+          </div>
+          <div role="group" class="secure-access">
+            <span><a href="./ip_security.html" target="_blank" title="IP보안접속 설명">IP 보안</a></span>
+            <input type="checkbox" id="ip-security" name="ip-security" />
+            <label for="ip-security" class="sr-only">IP 보안접속 선택여부</label>
+          </div>
+        </div>
+      </div>
+    </form>
+    </section>
+  </header>
+</body>
+</html>
